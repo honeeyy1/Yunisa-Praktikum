@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulir Pendaftaran Klinik Sehat</title>
+</head>
+<body>
+  <h2>Formulir Pendaftaran Pasien Baru</h2>
+  <form action="submit_klinik.html" method="post">
+    <label>Nama Pasien:</label>
+    <input type="text" name="nama_pasien" required />
+    <br />
+
+    <label>Tanggal Lahir:</label>
+    <input type="date" name="tanggal_lahir" required />
+    <br />
+
+    <label>Jenis Kelamin:</label>
+    <input type="radio" name="jenis_kelamin" value="Laki-laki" /> Laki-laki
+    <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan
+    <br />
+
+    <label>Keluhan:</label><br />
+    <textarea name="keluhan" rows="5" cols="40"></textarea>
+    <br />
+
+    <label>Poli Tujuan:</label>
+    <select name="poli_tujuan">
+      <option value="Umum">Umum</option>
+      <option value="Gigi">Gigi</option>
+      <option value="Anak">Anak</option>
+    </select>
+    <br />
+
+    <input type="submit" value="Daftar Pasien" />
+  </form>
+</body>
+</html>
